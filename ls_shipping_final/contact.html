@@ -1,7 +1,433 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact | LS Shipping LLC</title><link rel="icon" href="images/ls-shipping-logo.png"><link rel="stylesheet" href="css/style.css"></head>
-<body><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="images/ls-shipping-logo.png" alt="LS Shipping LLC"></a><nav class="nav"><a href="index.html">Home</a><a href="operations.html">Operations</a><a href="fleet.html">Our Fleet</a><a class="active" href="contact.html">Contact</a></nav></div></header>
-<main><section class="hero contact"><div class="container hero-content"><div class="eyebrow">Contact</div><h1>Technical Support<br>for Your Fleet</h1><span class="accent"></span><div class="strap">Responsive. Reliable. Global.</div></div></section>
-<section class="section"><div class="container"><div class="contact-grid"><div class="contact-info"><div class="kicker">Get in Touch</div><h2>Technical<br>Support</h2><span class="accent" style="display:block;width:62px;height:4px;background:var(--orange);margin:20px 0 32px"></span><p>For vessel inquiries, technical support or partnership opportunities, please contact our team directly.</p><div class="contact-item"><div class="label">Email</div><div class="value"><a href="mailto:info@shipls.com">info@shipls.com</a></div></div></div>
-<div class="form"><h2>Send Us a Message</h2><form class="contact-form"><div class="form-grid"><div class="field"><label>Full name *</label><input name="name" required placeholder="Enter your full name"></div><div class="field"><label>Email address *</label><input name="email" type="email" required placeholder="Enter your email address"></div><div class="field full"><label>Inquiry type</label><select name="type"><option>Technical management</option><option>Operational support</option><option>Compliance</option><option>Other enquiry</option></select></div><div class="field full"><label>Message *</label><textarea name="message" required placeholder="Write your message here..."></textarea></div><div class="field full"><button type="submit">Send message</button></div></div></form></div></div></div></section></main>
-<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><strong>LS SHIPPING LLC</strong><span>A WORLD IN MOTION</span></div><div class="footer-line"></div><div class="footer-values">TRUST | EFFICIENCY | LONG-TERM PARTNERSHIP</div></div></footer>
-<div class="modal" id="thankYouModal"><div class="modal-card"><h3>Thank you</h3><p>Your enquiry is ready to be sent to <strong>info@shipls.com</strong>.</p><button id="modalClose" type="button">Close</button></div></div><script src="js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Contact | LS Shipping LLC</title>
+
+  <link rel="icon" href="images/ls-shipping-logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="LS Shipping LLC Home">
+        <img
+          src="images/ls-shipping-logo.png"
+          alt="LS Shipping LLC"
+        >
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="operations.html">Operations</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero contact">
+      <div class="container hero-content">
+
+        <div class="eyebrow">Contact</div>
+
+        <h1>
+          Technical Support<br>
+          for Your Fleet
+        </h1>
+
+        <span
+          class="accent"
+          aria-hidden="true"
+        ></span>
+
+        <div class="strap">
+          Responsive. Reliable. Global.
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section">
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <!-- LEFT -->
+          <div class="contact-info">
+
+            <div class="kicker">
+              Get in Touch
+            </div>
+
+            <h2>
+              Technical<br>
+              Support
+            </h2>
+
+            <span
+              class="accent"
+              style="
+                display:block;
+                width:62px;
+                height:4px;
+                background:var(--orange);
+                margin:20px 0 32px
+              "
+              aria-hidden="true"
+            ></span>
+
+            <p>
+              For vessel inquiries, technical support or partnership opportunities,
+              please contact our team directly.
+            </p>
+
+            <div class="contact-item">
+
+              <div class="label">
+                Email
+              </div>
+
+              <div class="value">
+                <a href="mailto:info@shipls.com">
+                  info@shipls.com
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- RIGHT / FORM -->
+          <div class="form">
+
+            <h2>
+              Send Us a Message
+            </h2>
+
+            <form
+              class="contact-form"
+              id="contactForm"
+              novalidate
+            >
+
+              <div class="form-grid">
+
+                <!-- FULL NAME -->
+                <div class="field">
+
+                  <label for="name">
+                    Full name *
+                  </label>
+
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Enter your full name"
+                    required
+                  >
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="field">
+
+                  <label for="email">
+                    Email address *
+                  </label>
+
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="Enter your email address"
+                    required
+                  >
+
+                </div>
+
+
+                <!-- INQUIRY TYPE -->
+                <div class="field full">
+
+                  <label for="type">
+                    Inquiry type
+                  </label>
+
+                  <select
+                    id="type"
+                    name="type"
+                  >
+                    <option value="Technical management">
+                      Technical management
+                    </option>
+
+                    <option value="Operational support">
+                      Operational support
+                    </option>
+
+                    <option value="Compliance">
+                      Compliance
+                    </option>
+
+                    <option value="Other enquiry">
+                      Other enquiry
+                    </option>
+                  </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div class="field full">
+
+                  <label for="message">
+                    Message *
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required
+                  ></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <div class="field full">
+
+                  <button
+                    type="submit"
+                  >
+                    Send message
+                  </button>
+
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- THANK YOU MODAL -->
+  <div
+    class="modal"
+    id="thankYouModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="thankYouTitle"
+    >
+
+      <h3 id="thankYouTitle">
+        Thank you
+      </h3>
+
+      <p>
+        Your enquiry is ready to be sent to
+        <strong>info@shipls.com</strong>.
+      </p>
+
+      <button
+        id="modalClose"
+        type="button"
+      >
+        Close
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- CONTACT FORM SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const form = document.getElementById('contactForm');
+      const modal = document.getElementById('thankYouModal');
+      const closeButton = document.getElementById('modalClose');
+
+      if (!form) return;
+
+
+      /*
+       * Custom English validation.
+       * Prevents browser/system-language messages.
+       */
+      form.addEventListener('submit', function (event) {
+
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+
+        let valid = true;
+
+
+        // FULL NAME
+        name.setCustomValidity('');
+
+        if (!name.value.trim()) {
+          name.setCustomValidity('Please enter your full name.');
+          valid = false;
+        }
+
+
+        // EMAIL
+        email.setCustomValidity('');
+
+        if (!email.value.trim()) {
+          email.setCustomValidity('Please enter your email address.');
+          valid = false;
+
+        } else if (!email.validity.valid) {
+          email.setCustomValidity('Please enter a valid email address.');
+          valid = false;
+        }
+
+
+        // MESSAGE
+        message.setCustomValidity('');
+
+        if (!message.value.trim()) {
+          message.setCustomValidity('Please enter your message.');
+          valid = false;
+        }
+
+
+        // INVALID
+        if (!valid) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+
+          const firstInvalid = form.querySelector(':invalid');
+
+          if (firstInvalid) {
+            firstInvalid.focus();
+            firstInvalid.reportValidity();
+          }
+
+          return;
+        }
+
+
+        // VALID
+        event.preventDefault();
+
+        const data = new FormData(form);
+
+        const subject = encodeURIComponent(
+          'LS Shipping enquiry'
+        );
+
+        const body = encodeURIComponent(
+          'Full name: ' +
+          (data.get('name') || '') +
+          '\nEmail: ' +
+          (data.get('email') || '') +
+          '\nInquiry type: ' +
+          (data.get('type') || '') +
+          '\n\n' +
+          (data.get('message') || '')
+        );
+
+        window.location.href =
+          'mailto:info@shipls.com' +
+          '?subject=' +
+          subject +
+          '&body=' +
+          body;
+
+        if (modal) {
+          modal.classList.add('show');
+          modal.setAttribute('aria-hidden', 'false');
+        }
+
+        form.reset();
+
+      });
+
+
+      // Remove custom validation message after user starts editing.
+      form.querySelectorAll('input, textarea, select').forEach(function (field) {
+
+        field.addEventListener('input', function () {
+          this.setCustomValidity('');
+        });
+
+        field.addEventListener('change', function () {
+          this.setCustomValidity('');
+        });
+
+      });
+
+
+      // Close modal
+      if (closeButton) {
+
+        closeButton.addEventListener('click', function () {
+
+          modal.classList.remove('show');
+          modal.setAttribute('aria-hidden', 'true');
+
+        });
+
+      }
+
+
+      // Close when clicking outside modal
+      if (modal) {
+
+        modal.addEventListener('click', function (event) {
+
+          if (event.target === modal) {
+
+            modal.classList.remove('show');
+            modal.setAttribute('aria-hidden', 'true');
+
+          }
+
+        });
+
+      }
+
+    });
+  </script>
+
+</body>
+</html>
